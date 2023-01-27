@@ -15,7 +15,9 @@ public class SetLesson_1 {
         intSet.add(8);
 
         List<String> strList = new LinkedList<String>();
-
+        strList.add("First");
+        strList.add("Second");
+        strList.add("Third");
         intSet.forEach(System.out::println);
     }
 }

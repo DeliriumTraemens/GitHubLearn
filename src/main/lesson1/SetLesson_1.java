@@ -18,6 +18,7 @@ public class SetLesson_1 {
         strList.add("First");
         strList.add("Second");
         strList.add("Third");
+        strList.add("Fourth");
         intSet.forEach(System.out::println);
     }
 }

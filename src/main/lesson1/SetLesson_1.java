@@ -25,6 +25,7 @@ public class SetLesson_1 {
         strList.add("Fourth");
         strList.add("Fifth");
         strList.add("Sixth");
+        strList.add("Seventh");
         intSet.forEach(System.out::println);
 
         System.out.println(ClassLayout.parseInstance(intSet).toPrintable());

@@ -1,5 +1,7 @@
 package main.lesson1;
 
+import org.openjdk.jol.info.ClassLayout;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -8,6 +10,8 @@ import java.util.Set;
 public class SetLesson_1 {
 
     public static void main(String[] args) {
+        int[]digiArr=new int[]{5,7,9,12};
+
         Set<Integer> intSet = new HashSet<Integer>();
         intSet.add(2);
         intSet.add(4);
@@ -20,5 +24,8 @@ public class SetLesson_1 {
         strList.add("Third");
         strList.add("Fourth");
         intSet.forEach(System.out::println);
+
+        System.out.println(ClassLayout.parseInstance(intSet).toPrintable());
+        System.out.println(ClassLayout.parseInstance(digiArr).toPrintable());
     }
 }
